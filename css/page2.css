@@ -1,0 +1,144 @@
+		
+		@keyframes move{
+			from{ transform: translateY(100px); opacity: 0;}   
+			to{ transform: translateY(0px); opacity: 1;}  
+		}
+		.aninode p{
+			opacity: 0;
+		} 
+		.active{
+			animation: move 1s;
+			animation-fill-mode: forwards !important;
+		}
+		.delay200 {
+		    animation-delay: 400ms;   
+		}
+		.delay400 {
+		    animation-delay: 600ms;
+
+		}
+		.delay600 {
+		    animation-delay: 800ms;
+		}
+		.delay800 {
+		    animation-delay: 1000ms;
+		}
+			/*中间部分*/
+		@keyframes skill_scale {
+			0% {
+				opacity: 0.1;
+				transform:scale(0.3);
+			}
+			100% {
+				opacity: 1;
+				transform: scale(1);	
+			}
+		}
+		.skill_list{
+			opacity: 0;
+		}
+		.skill_trans{
+			animation: skill_scale 1s;
+			animation-fill-mode: forwards !important;
+		}
+		.content_center{
+			position: absolute;
+			top:12%;
+			background-color: #a0a0b4;
+			width: 50rem;
+			height: 9.375rem;
+			border-radius: 1.875rem;
+			padding:1.25rem 0;
+			margin: 3.125rem auto;
+			display: flex;
+		}
+		.about_list{
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;	
+		}
+		.about_list:hover .list_top{
+			background: rgba(255,255,255,1);
+			color: #702fa8;
+			box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+		}
+		.about_list{
+			font-weight: inherit;
+		}
+		.list_top{
+			width: 5rem;
+			height: 5rem;
+			box-shadow: 0 0 0 4px rgb(255 255 255);
+			border-radius: 50%;
+		}
+
+		.list_top::after{
+			line-height: 8.125rem;
+			margin-left: 10px;
+		}
+		#top1::after{
+			content: url(../img/education.png);	
+		}
+		#top2::after{
+			content: url(../img/age.png);
+		}
+		#top3::after{
+			content: url(../img/location.png);
+		}
+		#top4::after{
+			content: url(../img/status.png);
+		}
+		.list_bottom{
+			position: relative;
+			margin-top: 1.25rem;
+			color: #fff;
+			width: 5rem;
+		}
+		.list_bottom p {
+			text-align: right;
+			padding-top: 10px;
+			margin: 0;
+		}
+		.list_bottom p::before{
+			display: block;
+			content: "";
+			position: absolute;
+			background: #ccc;
+			height: 2px;
+			width: 90px;
+			bottom: 24px;
+			transform: rotate(-30deg)
+		}
+		/* 尾部 */
+		.content_foot{
+			top: 44%;
+			width: 50rem;
+			position: relative;
+		}
+		.content_foot::before,.content_foot::after{
+			position: absolute;
+			width: 3.75rem;
+			height: 3.75rem;
+			content: "";
+		}
+		.content_foot::before{
+			top: 0;
+			left: 0;
+			border-top: 2px solid #5686D6;
+			border-left: 2px solid #5686D6;
+		}
+		.content_foot::after{
+			bottom: 0;
+			right: 0;
+			border-bottom: 2px solid #5686D6;
+			border-right: 2px solid #5686D6;
+		}
+		.content_foot p {
+			text-align: center;
+			line-height: 40px;
+		}
+		
+		
+		
+		

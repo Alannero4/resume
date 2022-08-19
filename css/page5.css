@@ -1,0 +1,96 @@
+.content5{
+	height: 39rem !important;
+}
+.contact_head {
+	position: absolute;
+    top: 120px;
+    width: 1000px;
+}
+#contact_head1 {
+    font-size: 24px;
+	text-align: center;
+}
+#contact_head2 {
+	margin: 10px 0;
+    font-size: 30px;
+	text-align: center;
+    text-transform: uppercase;
+}
+#contact_head2 span:nth-child(1) {
+    color: #f00;
+}
+#contact_head2 span:nth-child(2) {
+    color: #3cf;
+}
+#contact_head2 span:nth-child(3) {
+    color: #6c0;
+}
+#contact_head2 span:nth-child(4) {
+    color: #f63;
+}
+.content_info{
+	position: absolute;
+	top: 210px;
+}
+.content_info ul{
+	list-style: none
+}
+.content_info ul li{
+	text-align: center;
+	font-size: 18px;
+	line-height: 35px;
+}
+.mask{
+	position: absolute;
+	bottom: 20px;
+	float: left;
+	margin: 30px 450px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #ccc;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+.mask:hover{
+	box-shadow: 0 0 10px #279abb;
+}
+.contact_form{
+	position: absolute;
+	bottom: 20px;
+	margin-left: 15px;
+	display: none;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 14px;
+}
+.page_foot{
+	padding-top: 10px;
+	position: absolute;
+	bottom: 0;
+	height: 5.375rem;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 8px;
+	color: #666;
+	border-top: 2px solid #ccc;
+}
+.page_foot a{
+	text-decoration: none;
+	margin: 0 5px;
+}
+.footCenter{
+	margin: 10px 0;
+}
+.page_foot a:link{
+	color: #666;
+}
+.page_foot a:visited{
+	color: #666;
+}
+.page_foot a:hover{
+	color: #930709
+}
